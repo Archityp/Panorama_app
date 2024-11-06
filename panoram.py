@@ -10,7 +10,7 @@ import base64
 
 # Access credentials, sheet ID, and scope from secrets data
 ADMIN_PASSWORD = st.secrets["PASSWORD"]
-GOOGLE_SHEETS_CREDENTIALS = st.secrets["GOOGLE_SHEETS_CREDENTIALS"]
+GOOGLE_SHEETS_CREDENTIALS = json.loads(st.secrets["GOOGLE_SHEETS_CREDENTIALS"])
 SHEET_ID = st.secrets["SHEET_ID"]
 SCOPE = st.secrets["SCOPE"]
 MASTER_KEY = st.secrets["MASTER_KEY"]
