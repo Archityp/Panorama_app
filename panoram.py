@@ -27,15 +27,15 @@ def display_panorama(image_data, title):
 
 def main():
     st.title("Multi-File 360° Photo Viewer")
-    st.write("Upload up to 3 images to preview them interactively in separate viewers.")
+    st.write("Upload up to 5 images to preview them interactively in separate viewers.")
 
     # Allow multiple file uploads
     uploaded_files = st.file_uploader("Choose up to 3 images", type=["jpg", "jpeg", "png"], accept_multiple_files=True)
 
     # Limit to 3 files and check for valid uploads
     if uploaded_files:
-        if len(uploaded_files) > 3:
-            st.warning("Please upload a maximum of 3 files.")
+        if len(uploaded_files) > 5:
+            st.warning("Please upload a maximum of 5 files.")
         else:
             # Display each uploaded image in a separate viewer
             for i, uploaded_file in enumerate(uploaded_files):
