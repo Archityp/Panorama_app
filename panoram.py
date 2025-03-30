@@ -30,7 +30,7 @@ def main():
     st.write("Upload up to 5 images to preview them interactively in separate viewers.")
 
     # Allow multiple file uploads
-    uploaded_files = st.file_uploader("Choose up to 3 images", type=["jpg", "jpeg", "png"], accept_multiple_files=True)
+    uploaded_files = st.file_uploader("Choose up to 5 images", type=["jpg", "jpeg", "png"], accept_multiple_files=True)
 
     # Limit to 3 files and check for valid uploads
     if uploaded_files:
